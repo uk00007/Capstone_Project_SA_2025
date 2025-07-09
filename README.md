@@ -5,8 +5,8 @@ The other parking lots have their pricing model based on the model-1.
 The pricing strategy for the target lot is influenced by its competitors, which are decided on the basis of geographical distance.
 
 
-Technology Stack
-Core Technologies
+# Technology Stack
+# Core Technologies
 Python 3.x - Primary programming language providing the foundation for all system components
 
 Pathway - Advanced stream processing framework enabling real-time data handling and temporal analytics
@@ -21,7 +21,7 @@ Panel - Web application framework for building responsive dashboards and user in
 
 Matplotlib - Additional plotting capabilities for data visualization and analysis
 
-Data Processing Infrastructure
+# Data Processing Infrastructure
 Datetime Module - Time-based operations, parsing, and temporal data management
 
 CSV Processing - Structured data ingestion from comma-separated value files
@@ -30,7 +30,7 @@ Stream Analytics - Real-time data processing using Pathway's temporal windowing 
 
 Haversine Distance Calculation - Geographical distance computation for location-based pricing effects
 
-Visualization and User Interface
+# Visualization and User Interface
 Bokeh Plotting - Interactive time-series charts with real-time updates
 
 Panel Extensions - Web-based dashboard interface with responsive design
@@ -40,8 +40,8 @@ Real-time Visualization - Dynamic chart updates synchronized with data streams
 Alert Visualization - Color-coded indicators for congestion and re-routing recommendations
 
 
-System Architecture Components
-1. Data Ingestion Layer
+# System Architecture Components
+# 1. Data Ingestion Layer
 The system begins with a robust data ingestion layer that handles multiple parking lot data sources:
 
 Data Sources: CSV files containing historical and real-time parking lot data with comprehensive metrics
@@ -52,7 +52,7 @@ Stream Simulation: Controlled data replay at configurable rates (100 records/sec
 
 Data Validation: Automatic validation of incoming data against predefined schemas with error handling
 
-2. Data Processing Layer
+# 2. Data Processing Layer
 The processing layer transforms raw data into actionable insights:
 
 Data Transformation: Conversion of categorical string values to numerical representations for algorithmic processing
@@ -63,7 +63,7 @@ Location Analytics: Haversine formula implementation for calculating distances b
 
 Feature Engineering: Creation of derived metrics including occupancy rates, demand indicators, and traffic conditions
 
-3. Pricing Algorithm Layer
+# 3. Pricing Algorithm Layer
 The system implements three sophisticated pricing models:
 
 Model 1: Competitor Lot Pricing
@@ -92,7 +92,7 @@ Effect coefficient calculation: 1/distance_to_competitor
 
 Price adjustment: price = price + 0.6 × (competitor_price - price) × (effect_coeff / total_effect)
 
-4. Alert and Congestion Management System
+# 4. Alert and Congestion Management System
 The intelligent alert system monitors occupancy levels and provides re-routing recommendations:
 
 Congestion Monitoring: Real-time tracking of occupancy rates with 70% threshold alerts
@@ -103,7 +103,7 @@ Price Comparison: Continuous monitoring of competitive pricing for optimization 
 
 Automated Alerts: Generation of actionable recommendations for traffic distribution
 
-5. Visualization and Dashboard Layer
+# 5. Visualization and Dashboard Layer
 The system provides comprehensive real-time visualization:
 
 Interactive Dashboard: Multi-panel dashboard with synchronized time-series charts
