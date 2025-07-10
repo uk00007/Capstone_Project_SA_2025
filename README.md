@@ -89,6 +89,7 @@ Distance-based competitive pricing considering nearby lot prices
 Effect coefficient calculation: 1/distance_to_competitor
 
 Price adjustment: price = price + 0.6 × (competitor_price - price) × (effect_coeff / total_effect)
+
 Note: The target lot price adjustment is made for each of the competitors, updating price by the above mentioned formula in every iteration.
 
 # 4. Alert and Congestion Management System
